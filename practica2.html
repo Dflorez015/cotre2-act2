@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+	<style>
+		*{
+			margin: 20px;
+		}
+		body{
+			background: #d9d0c5;
+		}
+		.separadores{
+			border-bottom: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<h1>Ejercicios Javascript</h1>
+		<p>Trabajo presentado por: Duvan Florez Ardila y Jesús Movilla Gómez</p>
+		<form>
+			<section>
+				<div class="separadores">
+					<p>
+						1. Escriba un programa que reciba un número entero N e imprima todos los números primos desde 1
+						hasta N. Un número primo es aquel que solo es divisible por el mismo y por el número 1.
+					</p>
+					<div>
+						<input type="text" id="txtnumPrimos" placeholder="Ingrese un número">
+						<input type="button" onclick="primos()" value="primos">
+					</div>
+					<p id="resultadoPrimos"></p>
+				</div>
+
+				<div class="separadores">
+					<p>
+						2. La serie de Fibonacci es la siguiente sucesión infinita de números naturales:
+
+						La sucesión comienza con los números 0 y 1, a partir de estos, «cada término es la suma de los
+						dos anteriores» 1 = 0+1, 2 = 1+1, 3 = 1+2, 5 = 2+3….1597 = 610 + 987….N
+						Escriba un programa que dado un número N por el usuario, imprima los primeros N números de la
+						serie de Fibonacci empezando desde 0.
+
+					</p>
+					<div>
+						<input type="text" id="txtnumFibonacci" placeholder="Ingrese un número">
+						<input type="button" onclick="fibonacci()" value="fibonacci">
+					</div>
+					<p id="resultadoFibonacci"></p>
+				</div>
+
+				<div class="separadores"> 
+					<p>
+						3. Dado un número N, Imprima la sumatoria: 1^N + 2^N +3^N +4^N+…+ N^N	</p>
+					<div>
+						<input type="text" id="txtnumSumatoria" placeholder="Ingrese un número">
+						<input type="button" onclick="sumatoria()" value="sumatoria">
+					</div>
+					<p id="resultadoSumatoria"></p>
+				</div>
+			</section>
+		</form>
+	</center>
+	<script type="text/javascript" src="operaciones.js"></script>
+
+</body>
+
+</html>
